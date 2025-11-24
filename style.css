@@ -1,10 +1,10 @@
 /* 
   Mobile-first layout for CB1 housing story.
-  Single-column design for phones, then slightly more breathing room on larger screens.
+  Single-column design for phones, then slightly larger on computer screens. Used google and other research to enhance my project.
 */
 
 /* 
-  :root holds our CSS variables so colors and spacing can be adjusted in one place.
+  :root holds CSS variables so colors and spacing can be adjusted in one place.
 */
 :root {
   --bg-page: #eef5f5;   /* soft feature-style tint for page background */
@@ -33,7 +33,6 @@ body {
 
 /* 
   Main content container keeps the story centered and readable.
-  Focus stays on the reporting, not a busy layout.
 */
 .container {
   max-width: var(--max-width);
@@ -42,7 +41,6 @@ body {
   background: var(--bg-main);
 }
 
-/* Lead photo styling puts the visual at the top to set tone for the story */
 .lead-photo {
   text-align: center;
   margin: 0 0 16px;
@@ -68,7 +66,6 @@ body {
 
 /* 
   Header block frames the headline, subhead, byline, and dateline.
-  This is where the reader understands what the piece is about at a glance.
 */
 .page-header {
   border-bottom: 1px solid var(--line);
@@ -107,7 +104,7 @@ body {
   margin-bottom: 6px;
 }
 
-/* Story body text keeps a simple rhythm so the data and quote can land clearly */
+/* Story body text keeps it simple so the data and quote can lead */
 .story {
   margin-top: 16px;
   font-size: 1rem;
@@ -124,8 +121,7 @@ body {
 }
 
 /* 
-  Chart section separates the visual evidence from the narrative.
-  This helps the reader see how the numbers back up the story.
+  Chart section separate. This helps the reader see how the numbers back up the story.
 */
 .chart-section {
   margin-top: 26px;
@@ -147,7 +143,6 @@ body {
 
 /* 
   The chart wrapper ensures the Datawrapper iframe cannot overflow horizontally.
-  Datawrapper controls height via postMessage; we just guarantee full width.
 */
 .chart-embed {
   margin: 0 0 10px;
@@ -210,8 +205,7 @@ a:hover {
 }
 
 /* 
-  On larger screens, give the layout more breathing room.
-  Design stays simple so the story and the data stay front and center.
+  On larger screens.  Design stays simple so the story and the data stay centered.
 */
 @media (min-width: 768px) {
   .container {
